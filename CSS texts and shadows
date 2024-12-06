@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS text lines and shadows</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Nabla&display=swap');
+        .text-1 {
+            border: 2px solid black;
+            margin: 20px;
+            padding: 30px;
+            box-shadow: 3px 3px 50px red;
+            font-family: "Dancing Script", cursive;
+            font-size: 30px;
+            color: blue;
+            text-shadow: 7px 10px 13px blue;
+            text-transform:uppercase;
+        }
+        .text-2{
+            outline: 2px solid blue;
+            outline-style:groove;
+            margin: 30px;
+            /* outlines dont take up spcae unlike borders. They are drawn around the area */
+        }
+        .text-3{
+            border: 2px solid green;
+            border-radius: 10px;
+            margin: 10px;
+            /* borders can have curvy radius unlike outlines */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-1">This is a text box with shadows</div>
+    <div class="text-2">This is another text box to practise outline</div>
+    <div class="text-3">This is to test border</div>
+
+</body>
+
+</html>
