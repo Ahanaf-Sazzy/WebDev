@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            background-color: rgb(33, 32, 33);
+            
+        }
+        .nav_items{
+            display: flex;
+            list-style: none;     
+        }
+        ul li{
+            padding: 20px;
+            ;
+            
+        }
+        
+        ul li:hover{
+            color: rgb(16, 18, 22);
+            background-color: rgb(48, 95, 159);
+        }
+
+        
+        
+        .nav{
+                background-color: rgb(18, 57, 129);
+                color: rgb(225, 228, 241);
+        }
+        .description{
+            color: rgb(209, 207, 204);
+            background-color: rgb(27, 27, 64);
+            padding: 10px;
+        }
+        .link{
+            padding: 10px;
+            color: #0d84e5;
+        }
+        .link:hover{
+            color: rgb(175, 44, 184);
+            
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="nav">
+        <ul class="nav_items">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="description">
+       
+        Success comes from dedication, persistence, and learning. Challenges shape our growth, while failures teach resilience. Stay focused on your goals and embrace change. Hard work, coupled with a positive attitude, unlocks potential. Believe in yourself, take risks, and seize opportunities. Every step forward brings you closer to achieving your dreams.
+
+         <div class>
+            <a href="https://yourstory.com/mystory" class="link" target="_blank"> Here is listed some of the inspirational success stories -</a>
+         </div>
+        
+    </div>
+
+</body>
+</html>
