@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS selectors</title>
+    <style>
+        .boxes{
+            border: 2px solid black;
+        }
+        .boxes *{
+            border: 1px solid black;
+        }
+        /* .boxes::first-line{
+                    background-color: violet;
+        } */ 
+
+        /* every element inside boxes class gets affected by the attributes given here */
+        /* .box:nth-child(even){
+            background-color: yellowgreen;
+        } */
+
+        /* even number children gets affected . can also give odd*/
+
+        p,a,[data-color="primary"]{
+            color: rgb(162, 0, 255);
+        }
+        /* every p,div,a tag will get affected throughout the page */
+
+        .boxes::before{
+            content:"This is sigma web development";
+            background-color: tomato;  
+        }
+        /* .boxes::after{
+            content: "Web development is important";
+            background-color: tomato;
+        } */
+        /* Important! WE can dynamically add elements and their attributes in this way. Very much used in web dev. */
+
+        .box::selection{
+            color: red;
+            background-color: black;
+        }
+        /* means upon selection by mouse it changes properties */
+
+        .box::first-letter{
+            color: rgb(9, 33, 187);
+            font-size: 25px;
+        }
+        input::placeholder{
+           color: brown;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">This is box 1</div>
+        <div class="box">This is box 2</div>
+        <div class="box">This is box 3</div>
+        <div class="box">This is box 4</div>
+        </div>
+
+        <div><br><input type="text" placeholder="Type your text here"></div>
+        
+</body>
+</html>
