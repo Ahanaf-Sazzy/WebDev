@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+       
+       body{
+        background-color: rgb(165, 139, 139);
+       }
+
+       @media screen and (orientation: landscape) {
+
+            .BOX{
+                border: 1px solid black;
+
+            }
+       }
+       /* the border stays as long as the device orientation is landscape */
+       
+       
+       @media only screen and (max-width: 500px) {
+            body {
+                background-color: yellowgreen;
+                
+            }
+            .BOX{
+                flex-direction: column;
+            }
+        }
+
+       /* means whenever a device of 400px or less opens the website,its bg color will be yellowgreen  */
+
+       .box{
+            width: 245px;
+            height: 245px;
+            background-color: cadetblue;
+            border: 1px solid black;
+            margin: 5px;
+       }
+       .BOX{
+        display: flex;
+        /* margin: 100px;
+        padding: 10px; */
+       }
+        
+    </style>
+</head>
+
+<body>
+    <div class="BOX">
+        <div class="box" style="text-align: center;">Content 1</div>
+        <div class="box" style="text-align: center;">Content 2</div>
+        <div class="box" style="text-align: center;">Content 3</div>
+        <div class="box" style="text-align: center;">Content 4</div>
+
+    </div>
+
+</body>
+
+</html>
