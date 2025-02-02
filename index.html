@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colors</title>
+        <style>
+            div p{
+                color: #0f8ae5;
+                /* one way to give color. Hex color code is necessary for developing because we might need to use the same color multiple times and for that we need that color code */
+            }
+            .p1{
+                color: rgba(255, 0, 0, 0.581);
+                background-color: rgba(137, 43, 226, 0.369);
+                /* the last number controls opacity */
+            }
+            .p2{
+                color: hsla(157, 87%, 43%, 0.855);
+                /* hsl type of color. Used less but at least good to know */
+            }
+
+        </style>
+</head>
+<body>
+    <div><p>This is about colors</p></div>
+    <p class="p1">this is a paragaph</p>
+    <p class="p2">this is paragraph 2</p>
+</body>
+</html>
