@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        .class1 {
+            background-color: rgb(161, 161, 196);
+        }
+        .class1 > p{
+            color: rgb(229, 124, 71);
+            background-color: rgb(147, 210, 210);
+        }
+        /* this means the child of the element with class1 is p and inside is the attributes of p */
+
+        .class1 p{
+
+            color: rgb(243, 5, 5);
+            background-color: aquamarine;
+        }
+
+         
+        /* this means now p is not a direct child of blue class but a descendent so the attributes apply to this one */
+
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        /* this is a universal selector, meaning all elements get affected */
+
+
+        .class2{
+            color: rgb(23, 200, 61);
+        }
+        #abc{
+            color: red;
+        }
+
+        a:visited  {
+            color: rgb(188, 10, 243);
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        /* these are pseudo selector of three types */
+    </style>
+</head>
+<body>
+    <div class="class1" >Hello this is div1
+        <article>Hello i am an article
+         
+        </article>
+        <p>hello</p>
+
+    </div>
+    <div class="class2">Hello this is div2</div>
+    <div id="abc" class="class2">Hello this is div3</div>
+    <div> <a href="https://www.google.com">Google</a> </div>                      
+</body>
+</html>
