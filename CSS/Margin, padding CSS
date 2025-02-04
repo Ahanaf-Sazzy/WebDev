@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin CSS</title>
+    <style>
+        
+
+       
+        .box{
+            background-color: rgb(26, 234, 165);
+        }
+        .box1{
+            color: rgb(62, 34, 128);
+            padding: 10px;
+            height: 200px;
+            border:3px solid red;
+            margin: 30px;
+            box-sizing: border-box;
+            /* this means the total height of the box wil be 200 when we add box height, padding and border */
+
+            /* and when we dont give box sizing = border box, it means just the box height will be 200 along with additional height of padding,border */
+        }
+        
+        .box2{
+            color: rgb(125, 14, 14);
+            padding: 10px;
+            height: 200px;
+            border:3px solid rgb(0, 255, 76);
+            margin: 30px;
+            box-sizing: border-box;
+            /* this creates a margin collapse meaning both boxes get overlapped while the maximum margin distance remain between the two of them */
+            
+        }
+       
+        /* note that for classes of same levels, priority will be gotten by the class that is defined in the latest line of code */
+        
+    </style>
+</head>
+<body>
+    <div class="box box1" >This is a box 1</div>
+    <div class="box box2" >This is box 2</div>
+</body>
+</html>
