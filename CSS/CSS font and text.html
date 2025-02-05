@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Sixtyfour+Convergence&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap');
+        h1 {
+            font-family: "Edu AU VIC WA NT Dots", cursive;
+            text-align: center;
+            font-style: bold;
+            font-size: 50px;
+            color: rgb(255, 0, 102);
+        }
+        /* basically we can import various types of fonts as we want from google fonts 
+        we can either import fonts or paste the link in the head tag!! */
+
+        .p1 {
+            color: rgb(32, 32, 209);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .p2 {
+            color: rgb(209, 50, 32);
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration:underline;
+            text-decoration-color: rgb(36, 213, 36);
+            text-decoration-thickness: 2px;
+            /* width: 80px; */
+            border: 2px solid red;
+            /* word-break: break-all; */
+             /* text-overflow: ellipsis; 
+            overflow:auto; */
+
+
+            /* in here, text goes outside the border if the width is too small and in order to bring the text insdie the border we use text overflow ellipsis and we can set overflow to hidden or auto or scroll
+            furthermore we can use work break to break the words inside the border and show it as a whole wihtout hiding it. To test it we uncomment it */
+        }
+        h2{
+            text-transform: capitalize;
+            /* used to transform texts in various forms */
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>This is for CSS fonts</h1>
+    <p class="p1" >Mount Everest is the tallest</p>
+    <p class="p2" >Ronaldo is the greatest player of all time</p>
+    <h2>about the company</h2>
+</body>
+
+</html>
